@@ -14,7 +14,7 @@
     />
 
     <!-- custom css file -->
-    <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="style.css" />
 
     <!-- google font link -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -38,15 +38,15 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
      
   </head>
-  <body>
+  <body style="overflow-x: hidden;">
     
     <!-- navbar starts -->
     <nav
       id="navbar-top"
       class="navbar navbar-expand-lg navbar-light bg-white sticky-top"
     >
-      <div class="container-fluid px-5">
-        <a class="navbar-brand fw-bold fs-2" href="#" style="color: #3f396d"
+      <div class="container-fluid">
+        <a class="navbar-brand fw-bold fs-2" href="#"
           >Portfolio</a
         >
         <button
@@ -63,7 +63,7 @@
         >
           <ul class="navbar-nav gap-4" style="font-size: 1.1rem">
             <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="#">Home</a>
+              <a class="nav-link" aria-current="page" href="#home">Home</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#service">Service</a>
@@ -77,10 +77,9 @@
             <li class="nav-item">
               <a class="nav-link" href="#testimonial">Testimonials</a>
             </li>
-    
-            <!-- <li class="nav-item">
-              <a class="nav-link" href="#blog">Blog</a>
-            </li> -->
+            <li class="nav-item">
+              <a class="nav-link" href="pricing.html">Pricing</a>
+            </li>
           </ul>
         </div>
         <a class="c-btn ms-4 py-2 px-4 rounded-pill d-none d-md-block" href="#contact">Contact</a>
@@ -89,26 +88,98 @@
     <!-- navbar ends here -->
 
     <!-- home section starts  -->
-    <section class="home pt-5 pb-5" id="home">
-      <div class="row justify-content-evenly align-middle">
-        <!-- here data-aos is used for adding aos animation  -->
-        <div class="col-10 col-md-6 text-center text-md-start" data-aos="slide-right">
-          <h2 style="color: #3f396d">
-            Hello! I Am <br /><span class="c-orange">Zohaib ul Hussnain</span>
-          </h2>
-          <p class="text-muted">
-            I'm A Web Developer having 2 years of experience in expertise of
-            creating website with fully responsive Also with backend part too.
-          </p>
-          <a class="c-btn h-btn mt-3 py-3 px-5 rounded-pill" href="#contact">
-            Hire Me
-          </a>
-          <a href="" class="link ms-4 d-none">See My Work</a>
+    <section class="home pt-5 pb-5 container-fluid" id="home">
+        <div class="row justify-content-evenly align-items-center min-vh-75">
+          <!-- here data-aos is used for adding aos animation  -->
+          <div class="col-10 col-md-6 text-center text-md-start" data-aos="slide-right">
+            <div class="hero-content">
+              <span class="badge bg-gradient-primary mb-3 px-3 py-2 rounded-pill">
+                <i class="bi bi-code-slash me-2"></i>Full-Stack Developer
+              </span>
+              <h1 class="hero-title mb-4">
+                Hello! I'm <br /><span class="gradient-text">Zohaib ul Hussnain</span>
+              </h1>
+              <p class="hero-description text-muted mb-4">
+                A passionate <strong>Full-Stack Developer</strong> with 2+ years of experience crafting 
+                modern web solutions. I specialize in building responsive, scalable applications 
+                using cutting-edge technologies including React.js, Next.js, Node.js, Python, and 
+                comprehensive database management with MongoDB and MySQL.
+              </p>
+              <p class="hero-description text-muted mb-4">
+                <i class="bi bi-brain text-primary me-2"></i>
+                Currently expanding my expertise in <strong>Artificial Intelligence</strong> and 
+                <strong>Machine Learning</strong>, exploring the intersection of web development 
+                and intelligent systems to create next-generation digital solutions.
+              </p>
+              <div class="hero-stats row text-center mb-4">
+                <div class="col-4">
+                  <div class="stat-item">
+                    <h4 class="stat-number text-primary">2+</h4>
+                    <small class="text-muted">Years Experience</small>
+                  </div>
+                </div>
+                <div class="col-4">
+                  <div class="stat-item">
+                    <h4 class="stat-number text-success">10+</h4>
+                    <small class="text-muted">Technologies</small>
+                  </div>
+                </div>
+                <div class="col-4">
+                  <div class="stat-item">
+                    <h4 class="stat-number text-warning">50+</h4>
+                    <small class="text-muted">Projects</small>
+                  </div>
+                </div>
+              </div>
+              <div class="hero-actions">
+                <a class="btn btn-primary btn-lg me-3 px-4 py-3 rounded-pill shadow-lg" href="#contact">
+                  <i class="bi bi-person-plus me-2"></i>Hire Me
+                </a>
+                <a class="btn btn-outline-primary btn-lg px-4 py-3 rounded-pill" href="#Projects">
+                  <i class="bi bi-eye me-2"></i>View Work
+                </a>
+              </div>
+              <div class="social-links mt-4">
+                <a href="#" class="social-link me-3" title="LinkedIn">
+                  <i class="bi bi-linkedin"></i>
+                </a>
+                <a href="#" class="social-link me-3" title="GitHub">
+                  <i class="bi bi-github"></i>
+                </a>
+                <a href="#" class="social-link me-3" title="Twitter">
+                  <i class="bi bi-twitter"></i>
+                </a>
+                <a href="mailto:your.email@example.com" class="social-link" title="Email">
+                  <i class="bi bi-envelope"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-10 col-md-5 text-center" data-aos="slide-left">
+            <div class="hero-image-container">
+              <div class="floating-elements">
+                <div class="floating-icon" style="top: 10%; left: 10%;">
+                  <i class="bi bi-code-square text-primary"></i>
+                </div>
+                <div class="floating-icon" style="top: 20%; right: 15%;">
+                  <i class="bi bi-database text-success"></i>
+                </div>
+                <div class="floating-icon" style="bottom: 30%; left: 5%;">
+                  <i class="bi bi-cpu text-warning"></i>
+                </div>
+                <div class="floating-icon" style="bottom: 10%; right: 10%;">
+                  <i class="bi bi-robot text-info"></i>
+                </div>
+              </div>
+              <img src="images/banner-01.webp" class="hero-image img-fluid" alt="Zohaib ul Hussnain" />
+              <div class="hero-badge">
+                <span class="badge bg-gradient-success px-3 py-2">
+                  <i class="bi bi-check-circle me-1"></i>Available for Work
+                </span>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="col-10 col-md-4 d-none d-md-block">
-          <img src="images/banner-01.webp"  class="img-fluid" alt="" />
-        </div>
-      </div>
     </section>
     <!-- home section ends here -->
 
@@ -192,75 +263,153 @@
 
     <!-- skill section starts -->
     <section class="skill mt-5 py-5" id="skills">
-      <div class="row justify-content-evenly">
-        <div class="col-10 col-md-5 skill-with-progress" data-aos="slide-right">
-          <div class="row justify-content-evenly">
-            <div class="col-10 col-md-6">
-              <div class="progress-card ms-3 ms-md-0">
-                <div class="circular-progress html-css">
-                  <span class="progress-value html-progress">0%</span>
-                </div>
-                <br />
-                <span class="text">HTML & CSS</span>
-              </div>
-            </div>
-            <div class="col-10 col-md-6 mt-4 mt-md-0">
-              <div class="progress-card ms-3 ms-md-0">
-                <div class="circular-progress javascript">
-                  <span class="progress-value javascript-progress">0%</span>
-                </div>
-                <br />
-                <span class="text">JavaScript</span>
-              </div>
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12">
+            <div class="heading text-center mb-5">
+              <small class="text-muted">My Expertise</small>
+              <h2 class="fw-bold">Technical Skills & Technologies</h2>
+              <p class="text-muted lead">Comprehensive full-stack development capabilities across modern technologies</p>
             </div>
           </div>
-          <div class="row justify-content-evenly mt-4">
-            <div class="col-10 col-md-6">
-              <div class="progress-card ms-3 ms-md-0">
-                <div class="circular-progress php">
-                  <span class="progress-value php-progress">0%</span>
+        </div>
+        
+        <div class="row justify-content-center">
+          <!-- Skills Grid -->
+          <div class="col-lg-8 col-md-10">
+            <div class="skills-grid">
+              <div class="skill-item" data-aos="fade-up" data-aos-delay="100">
+                <div class="progress-card">
+                  <div class="circular-progress html-css">
+                    <span class="progress-value html-progress">0%</span>
+                  </div>
+                  <span class="skill-name">HTML & CSS</span>
                 </div>
-                <br />
-                <span class="text">Node JS</span>
               </div>
-            </div>
-            <div class="col-10 col-md-6 mt-4 mt-md-0">
-              <div class="progress-card ms-3  ms-md-0">
-                <div class="circular-progress reactjs">
-                  <span class="progress-value reactjs-progress">0%</span>
+              
+              <div class="skill-item" data-aos="fade-up" data-aos-delay="150">
+                <div class="progress-card">
+                  <div class="circular-progress javascript">
+                    <span class="progress-value javascript-progress">0%</span>
+                  </div>
+                  <span class="skill-name">JavaScript</span>
                 </div>
-                <br>
-                <span class="text">ReactJS</span>
+              </div>
+              
+              <div class="skill-item" data-aos="fade-up" data-aos-delay="200">
+                <div class="progress-card">
+                  <div class="circular-progress reactjs">
+                    <span class="progress-value reactjs-progress">0%</span>
+                  </div>
+                  <span class="skill-name">ReactJS</span>
+                </div>
+              </div>
+              
+              <div class="skill-item" data-aos="fade-up" data-aos-delay="250">
+                <div class="progress-card">
+                  <div class="circular-progress nextjs">
+                    <span class="progress-value nextjs-progress">0%</span>
+                  </div>
+                  <span class="skill-name">Next.js</span>
+                </div>
+              </div>
+              
+              <div class="skill-item" data-aos="fade-up" data-aos-delay="300">
+                <div class="progress-card">
+                  <div class="circular-progress php">
+                    <span class="progress-value php-progress">0%</span>
+                  </div>
+                  <span class="skill-name">Node.js</span>
+                </div>
+              </div>
+              
+              <div class="skill-item" data-aos="fade-up" data-aos-delay="350">
+                <div class="progress-card">
+                  <div class="circular-progress python">
+                    <span class="progress-value python-progress">0%</span>
+                  </div>
+                  <span class="skill-name">Python</span>
+                </div>
+              </div>
+              
+              <div class="skill-item" data-aos="fade-up" data-aos-delay="400">
+                <div class="progress-card">
+                  <div class="circular-progress mongodb">
+                    <span class="progress-value mongodb-progress">0%</span>
+                  </div>
+                  <span class="skill-name">MongoDB</span>
+                </div>
+              </div>
+              
+              <div class="skill-item" data-aos="fade-up" data-aos-delay="450">
+                <div class="progress-card">
+                  <div class="circular-progress mysql">
+                    <span class="progress-value mysql-progress">0%</span>
+                  </div>
+                  <span class="skill-name">MySQL</span>
+                </div>
+              </div>
+              
+              <div class="skill-item" data-aos="fade-up" data-aos-delay="500">
+                <div class="progress-card">
+                  <div class="circular-progress csharp">
+                    <span class="progress-value csharp-progress">0%</span>
+                  </div>
+                  <span class="skill-name">C#</span>
+                </div>
+              </div>
+              
+              <div class="skill-item" data-aos="fade-up" data-aos-delay="550">
+                <div class="progress-card">
+                  <div class="circular-progress cpp">
+                    <span class="progress-value cpp-progress">0%</span>
+                  </div>
+                  <span class="skill-name">C++</span>
+                </div>
               </div>
             </div>
           </div>
         </div>
-        <div class="col-10 col-md-5 skill-detail" data-aos="slide-left">
-          <div class="heading mt-5 mt-md-3">
-            <small>My Skills</small>
-            <h3>Crafting Modern & Engaging Web Solutions</h3>
-            <p class="text-muted">
-              With expertise in HTML & CSS, JavaScript and Node.js. I craft dynamic,
-              responsive web solutions. I bring a solid understanding of React.js, 
-              continually enhancing my skills to create a seamless front-end experiences,
-              while leveraging back-end technologies for efficient
-               and scalable web applications.
-
-            </p>
-            <p class="text-muted">
-              Looking forward to 
-              building innovative digital 
-              solutions for the future.
-            </p>
-            <button class="c-btn h-btn mt-3 py-3 px-5 rounded-pill">
-              <!-- here download attribute is used for adding download functionality to button  -->
-              <a
-                href="/images/zhbcv.pdf"
-                download="/images/zhbcv.pdf"
-                style="text-decoration: none;color: #fff;"
-                >Download CV</a
-              >
-            </button>
+        
+        <!-- Skills Summary -->
+        <div class="row justify-content-center mt-5">
+          <div class="col-lg-8 col-md-10 text-center" data-aos="fade-up">
+            <div class="skills-summary">
+              <h4 class="mb-4">Full-Stack Development Expertise</h4>
+              <p class="text-muted mb-4">
+                As a versatile full-stack developer, I bring comprehensive expertise across the entire technology stack. 
+                From crafting responsive front-end interfaces with modern frameworks to building robust backend systems 
+                and managing diverse database solutions, I deliver complete digital solutions that drive business success.
+              </p>
+              <div class="row text-center">
+                <div class="col-md-4 mb-3">
+                  <div class="skill-category">
+                    <i class="bi bi-laptop fs-2 text-primary mb-2"></i>
+                    <h6>Frontend Development</h6>
+                    <small class="text-muted">HTML, CSS, JavaScript, React, Next.js</small>
+                  </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                  <div class="skill-category">
+                    <i class="bi bi-server fs-2 text-success mb-2"></i>
+                    <h6>Backend Development</h6>
+                    <small class="text-muted">Node.js, Python, C#</small>
+                  </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                  <div class="skill-category">
+                    <i class="bi bi-database fs-2 text-warning mb-2"></i>
+                    <h6>Database Management</h6>
+                    <small class="text-muted">MongoDB, MySQL</small>
+                  </div>
+                </div>
+              </div>
+              <button class="c-btn h-btn mt-4 py-3 px-5 rounded-pill">
+                <a href="/images/zhbcv.pdf" download="/images/zhbcv.pdf" style="text-decoration: none;color: #fff;">
+                  Download CV
+                </a>
+              </button>
+            </div>
           </div>
         </div>
       </div>
@@ -868,7 +1017,7 @@
         <div class="vr"></div>
         <a href="#portfolio">Portfolio</a>
         <div class="vr"></div>
-        <a href="#blog">Blog</a>
+        <a href="#pricing">Pricing</a>
         <div class="vr"></div>
         <a href="#contact">Contact</a>
       </div>
@@ -906,7 +1055,7 @@
       });
     </script>
     <!-- custom js file linking -->
-    <script src="/script.js"></script>
+    <script src="script.js"></script>
 
 
     
