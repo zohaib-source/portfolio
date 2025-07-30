@@ -26,20 +26,32 @@ $(document).ready(function () {
 
 // Optimized scroll handler - combines navbar and back-to-top functionality
 let ticking = false;
+let navbarHeight = 0;
+let isNavbarInitialized = false;
+
+function initNavbar() {
+  const navbar = document.getElementById('navbar-top');
+  if (navbar) {
+    // Set the navbar to fixed-top permanently to avoid flickering
+    navbar.classList.add('fixed-top');
+    navbarHeight = navbar.offsetHeight;
+    // Remove the padding-top to eliminate extra space above navbar
+    document.body.style.paddingTop = '0';
+    isNavbarInitialized = true;
+  }
+}
+
+// Initialize navbar on page load
+document.addEventListener('DOMContentLoaded', initNavbar);
 
 function updateOnScroll() {
   const scrollY = window.scrollY;
   const navbar = document.getElementById('navbar-top');
   const backToTopBtn = document.getElementById('btn-back-to-top');
   
-  // Navbar functionality
-  if (scrollY > 50) {
-    navbar.classList.add('fixed-top');
-    const navbarHeight = document.querySelector('.navbar').offsetHeight;
-    document.body.style.paddingTop = navbarHeight + 'px';
-  } else {
-    navbar.classList.remove('fixed-top');
-    document.body.style.paddingTop = '0';
+  // Make sure navbar is initialized
+  if (!isNavbarInitialized && navbar) {
+    initNavbar();
   }
   
   // Enhanced navbar styling
